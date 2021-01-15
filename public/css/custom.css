@@ -1,15 +1,14 @@
 .sidebar-logo {
-      padding: 1.5rem;
+      padding: 1rem;
 }
   
 .sidebar-logo img {
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
-      width: 160px;
+      width: 130px;
       margin: 0 auto;
 
 		padding:2px;
-		border:5px solid #E017E6;
-
+		border:4px solid #E017E6;
 }
