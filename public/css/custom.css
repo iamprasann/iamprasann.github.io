@@ -6,6 +6,10 @@
       border-radius: 50%;
       -moz-border-radius: 50%;
       -webkit-border-radius: 50%;
-      width: 160px;
+      width: 100px;
       margin: 0 auto;
+
+		padding:2px;
+		border:2px solid #D4AF37;
+
 }
