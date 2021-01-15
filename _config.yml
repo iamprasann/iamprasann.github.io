@@ -1,7 +1,7 @@
 # Setup
-title:               Home
-tagline:             'Prasann'
-description:         'Personal Website'
+title:               Prasann
+tagline:             
+description:         Feel free to explore these links, and find what you were looking for!
 url:                 https://iamprasann.github.io
 baseurl:             ''
 paginate:            1
@@ -20,3 +20,4 @@ plugins:
 # Custom vars
 version:             1.1.0
 google_analytics_id: UA-146052-15
+gtag: UA-146052-15
