@@ -1,0 +1,164 @@
+[
+  {
+    "name": "iamprasann.github.io",
+    "description": "Academic website of Prasann Iyer: a log of my undergraduate work",
+    "url": "https://github.com/iamprasann/iamprasann.github.io",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": null,
+    "updatedAt": "2026-04-21T11:44:28Z"
+  },
+  {
+    "name": "MA-tuts",
+    "description": "math tutorial solutions",
+    "url": "https://github.com/iamprasann/MA-tuts",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": null,
+    "updatedAt": "2023-09-06T07:25:10Z"
+  },
+  {
+    "name": "SEM-8-IITB-EE",
+    "description": "last sem stuff",
+    "url": "https://github.com/iamprasann/SEM-8-IITB-EE",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2023-09-06T07:02:34Z"
+  },
+  {
+    "name": "SEM-7-IITB-EE",
+    "description": "sem 7 things",
+    "url": "https://github.com/iamprasann/SEM-7-IITB-EE",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "TeX"
+    },
+    "updatedAt": "2023-09-06T06:58:13Z"
+  },
+  {
+    "name": "SEM-6-IITB-EE",
+    "description": "things i did in sem 6",
+    "url": "https://github.com/iamprasann/SEM-6-IITB-EE",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2023-09-06T06:51:16Z"
+  },
+  {
+    "name": "InstiShop",
+    "description": "BTP-I a P2P buy-sell-rent items in IITB dApp",
+    "url": "https://github.com/iamprasann/InstiShop",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": true,
+    "primaryLanguage": {
+      "name": "TypeScript"
+    },
+    "updatedAt": "2022-11-24T21:16:44Z"
+  },
+  {
+    "name": "SEM-5-IITB-EE",
+    "description": "#weeknd gon content",
+    "url": "https://github.com/iamprasann/SEM-5-IITB-EE",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2021-11-18T17:31:49Z"
+  },
+  {
+    "name": "MOOC-content",
+    "description": "Practice and Assignments",
+    "url": "https://github.com/iamprasann/MOOC-content",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "MATLAB"
+    },
+    "updatedAt": "2021-07-21T18:08:33Z"
+  },
+  {
+    "name": "SEM-4-IITB-EE",
+    "description": "All the unnecessarily excessive coding I did in SEM 4 at IITB",
+    "url": "https://github.com/iamprasann/SEM-4-IITB-EE",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2025-08-26T17:37:14Z"
+  },
+  {
+    "name": "16-bit-ALU",
+    "description": "",
+    "url": "https://github.com/iamprasann/16-bit-ALU",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": true,
+    "primaryLanguage": {
+      "name": "VHDL"
+    },
+    "updatedAt": "2020-12-05T17:00:07Z"
+  },
+  {
+    "name": "UMIC_TEAM4-Final",
+    "description": "The Final Setup for our UMIC recruitment project",
+    "url": "https://github.com/iamprasann/UMIC_TEAM4-Final",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "CMake"
+    },
+    "updatedAt": "2020-08-23T11:32:58Z"
+  },
+  {
+    "name": "Autumn-of-Automation",
+    "description": "Submissions for the assignments for the training program",
+    "url": "https://github.com/iamprasann/Autumn-of-Automation",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": true,
+    "primaryLanguage": {
+      "name": "Python"
+    },
+    "updatedAt": "2020-08-04T14:25:51Z"
+  },
+  {
+    "name": "SOC-2020",
+    "description": "All progress wrt to SOC 2020",
+    "url": "https://github.com/iamprasann/SOC-2020",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": {
+      "name": "Jupyter Notebook"
+    },
+    "updatedAt": "2020-06-04T15:18:02Z"
+  },
+  {
+    "name": "reports_SOC2020",
+    "description": "",
+    "url": "https://github.com/iamprasann/reports_SOC2020",
+    "homepageUrl": "",
+    "isArchived": false,
+    "isFork": false,
+    "primaryLanguage": null,
+    "updatedAt": "2020-06-02T17:11:23Z"
+  }
+]

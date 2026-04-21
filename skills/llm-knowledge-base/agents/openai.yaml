@@ -1,0 +1,7 @@
+interface:
+  display_name: "LLM Knowledge Base"
+  short_description: "Compile sources into a browsable markdown wiki"
+  default_prompt: "Use $llm-knowledge-base to ingest my source material, update the wiki pages and indexes, and write durable markdown outputs in this repo."
+
+policy:
+  allow_implicit_invocation: true

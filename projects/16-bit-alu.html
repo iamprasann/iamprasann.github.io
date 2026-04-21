@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>16-bit-ALU | Prasann Iyer Knowledge Base</title>
+  <meta name="description" content="16-bit-ALU is a forked but still meaningful hardware-design repository for an EE224 course project from 2020. The repository is small, flat, and focused: a structural VHDL implementation of a 16-bit ALU, built from lower-level gate and arithmetic modules, with a dedicated testbench and project artifacts.">
+  <link rel="stylesheet" href="/assets/wiki.css">
+  <script>
+    window.WIKI_CURRENT_URL = "/projects/16-bit-alu.html";
+  </script>
+  <script defer src="/assets/wiki.js"></script>
+</head>
+<body data-page-kind="project">
+  <button class="mobile-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="wiki-sidebar">Browse</button>
+  <aside class="sidebar" id="wiki-sidebar">
+    <a class="brand" href="/">
+      <span class="brand-mark">PI</span>
+      <span class="brand-copy">
+        <strong>Prasann Iyer</strong>
+        <span>Knowledge Base</span>
+      </span>
+    </a>
+    <section class="nav-group"><h2>Home</h2><a class="nav-link" href="/">Front Page</a></section><section class="nav-group"><h2>Indexes</h2><a class="nav-link" href="/indexes/repositories.html">Repositories</a><a class="nav-link" href="/indexes/ingestion-queue.html">Ingestion Queue</a></section><section class="nav-group"><h2>Semester Archives</h2><a class="nav-link" href="/projects/sem-4-iitb-ee.html">SEM-4-IITB-EE</a><a class="nav-link" href="/projects/sem-5-iitb-ee.html">SEM-5-IITB-EE</a><a class="nav-link" href="/projects/sem-6-iitb-ee.html">SEM-6-IITB-EE</a><a class="nav-link" href="/projects/sem-7-iitb-ee.html">SEM-7-IITB-EE</a><a class="nav-link" href="/projects/sem-8-iitb-ee.html">SEM-8-IITB-EE</a></section><section class="nav-group"><h2>Standalone Projects</h2><a class="nav-link" href="/projects/soc-2020.html">SOC-2020</a><a class="nav-link" href="/projects/umic-team4-final.html">UMIC_TEAM4-Final</a></section><section class="nav-group"><h2>Coursework &amp; Practice</h2><a class="nav-link" href="/projects/ma-tuts.html">MA-tuts</a><a class="nav-link" href="/projects/mooc-content.html">MOOC-content</a><a class="nav-link" href="/projects/reports-soc2020.html">reports_SOC2020</a></section><section class="nav-group"><h2>Forked Contributions</h2><a class="nav-link active" href="/projects/16-bit-alu.html">16-bit-ALU</a><a class="nav-link" href="/projects/autumn-of-automation.html">Autumn-of-Automation</a></section>
+  </aside>
+  <div class="page-column">
+    <header class="topbar">
+      <nav class="breadcrumbs"><a href="/">Home</a><span class="crumb-sep">/</span><span>Forked Contributions</span><span class="crumb-sep">/</span><span>16-bit-ALU</span></nav>
+      <div class="search-shell">
+        <input class="search-input" type="search" placeholder="Search articles" data-search-input aria-label="Search articles">
+        <div class="search-results" data-search-results hidden></div>
+      </div>
+    </header>
+    <main class="article">
+      
+        <header class="article-header">
+          <div class="article-kicker-row">
+            <span class="article-badge">Forked Contribution</span>
+            <a class="source-link" href="/wiki/projects/16-bit-alu.md">View Markdown Source</a>
+          </div>
+          <h1>16-bit-ALU</h1>
+          <p class="article-summary">16-bit-ALU is a forked but still meaningful hardware-design repository for an EE224 course project from 2020. The repository is small, flat, and focused: a structural VHDL implementation of a 16-bit ALU, built from lower-level gate and arithmetic modules, with a dedicated testbench and project artifacts.</p>
+        </header>
+        <h2 id="overview">Overview</h2>
+<ul><li>Repository: <a href="https://github.com/iamprasann/16-bit-ALU" target="_blank" rel="noreferrer">iamprasann/16-bit-ALU</a></li><li>Parent repository: <a href="https://github.com/vineetgala/16-bit-ALU" target="_blank" rel="noreferrer">vineetgala/16-bit-ALU</a></li><li>Created: December 5, 2020</li><li>Updated: December 5, 2020</li><li>Primary language on GitHub: VHDL</li><li>Fork: yes</li></ul>
+<p>The root README is minimal, but it clearly identifies the repo as a <code>16 bit ALU for EE224 course project in 2020</code>.</p>
+<h2 id="why-it-mattered">Why It Mattered</h2>
+<p>This repository matters because it adds a hardware-design thread to the knowledge base. It is not just a report or a simulation notebook; it preserves the actual VHDL design units, the structural top-level ALU composition, and a testbench that exercises many input patterns.</p>
+<p>Even though the repo is forked, it still reflects real work on:</p>
+<ul><li>digital design decomposition into reusable modules</li><li>arithmetic and logic block composition</li><li>ALU control-path selection through multiplexing</li><li>testbench-driven verification</li></ul>
+<p>That makes it a valid part of the undergraduate engineering record.</p>
+<h2 id="how-it-worked">How It Worked</h2>
+<p>The top-level <code>ALU.vhd</code> defines two select inputs, sixteen-bit operands <code>A</code> and <code>B</code> exposed as individual bit ports, sixteen result bits, a carry output, and a zero flag. Internally, the architecture instantiates separate modules for XOR, NAND, addition, and subtraction, computes those candidate outputs in parallel, and then selects among them using sixteen <code>MUX_4to1</code> components controlled by <code>S1</code> and <code>S0</code>.</p>
+<p>The carry line is also selected through a mux, and a <code>full_zero</code> component derives the zero flag from the output result. In other words, the ALU is implemented as a structural composition of independent logic/arithmetic units rather than a single behavioral block.</p>
+<p>The repo also contains supporting modules such as:</p>
+<ul><li><code>full_adder.vhd</code></li><li><code>full_subtract.vhd</code></li><li><code>full_xor.vhd</code></li><li><code>full_nand.vhd</code></li><li><code>full_zero.vhd</code></li><li>lower-level helper units like <code>my_and.vhd</code>, <code>my_or.vhd</code>, <code>my_not.vhd</code>, <code>my_xor.vhd</code>, and related files</li></ul>
+<p><code>Testbench.vhd</code> applies a large number of explicit bit-pattern test cases across the different select modes, which shows that validation was built into the project workflow.</p>
+<h2 id="key-artifacts">Key Artifacts</h2>
+<ul><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/README.md" target="_blank" rel="noreferrer">Root README</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/ALU.vhd" target="_blank" rel="noreferrer">ALU.vhd</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/Testbench.vhd" target="_blank" rel="noreferrer">Testbench.vhd</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/Project-PartA.pdf" target="_blank" rel="noreferrer">Project-PartA.pdf</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/FinalGraph.png" target="_blank" rel="noreferrer">FinalGraph.png</a></li></ul>
+<p>Representative artifacts visible in the repo include:</p>
+<ul><li>top-level ALU composition in VHDL</li><li>supporting gate and arithmetic modules</li><li>a large explicit testbench</li><li>project/report images and PDF documentation</li></ul>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>On a first pass, <code>16-bit-ALU</code> is best understood as a compact digital-design project archive. Its main value is not scale but clarity: the repo shows the structure of the design, the decomposition into modules, and the existence of verification work.</p>
+<p>The clearest second-pass opportunities are:</p>
+<ul><li>a deeper page on the ALU architecture and operation-selection logic</li><li>a closer reading of the project PDF and images to recover the original design rationale and results</li></ul>
+<h2 id="related">Related</h2>
+<ul><li><a href="/projects/autumn-of-automation.html">Autumn-of-Automation</a></li><li><a href="/indexes/repositories.html">Repositories</a></li><li><a href="/indexes/ingestion-queue.html">Ingestion Queue</a></li></ul>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="/raw/github/16-bit-alu/2026-04-21-capture.html">Local capture</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU" target="_blank" rel="noreferrer">iamprasann/16-bit-ALU</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/README.md" target="_blank" rel="noreferrer">16-bit-ALU README</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/ALU.vhd" target="_blank" rel="noreferrer">ALU.vhd</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/Testbench.vhd" target="_blank" rel="noreferrer">Testbench.vhd</a></li></ul>
+        
+    </main>
+  </div>
+  <aside class="toc-shell">
+    <div class="toc-card"><h2>On This Page</h2><a class="toc-item" href="#overview">Overview</a><a class="toc-item" href="#why-it-mattered">Why It Mattered</a><a class="toc-item" href="#how-it-worked">How It Worked</a><a class="toc-item" href="#key-artifacts">Key Artifacts</a><a class="toc-item" href="#lessons-learned">Lessons Learned</a><a class="toc-item" href="#related">Related</a><a class="toc-item" href="#sources">Sources</a></div>
+  </aside>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>16-bit-ALU Capture | Prasann Iyer Knowledge Base</title>
+  <meta name="description" content="Captured on April 21, 2026 from iamprasann/16-bit-ALU.">
+  <link rel="stylesheet" href="/assets/wiki.css">
+  <script>
+    window.WIKI_CURRENT_URL = "/raw/github/16-bit-alu/2026-04-21-capture.html";
+  </script>
+  <script defer src="/assets/wiki.js"></script>
+</head>
+<body data-page-kind="capture">
+  <button class="mobile-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="wiki-sidebar">Browse</button>
+  <aside class="sidebar" id="wiki-sidebar">
+    <a class="brand" href="/">
+      <span class="brand-mark">PI</span>
+      <span class="brand-copy">
+        <strong>Prasann Iyer</strong>
+        <span>Knowledge Base</span>
+      </span>
+    </a>
+    <section class="nav-group"><h2>Home</h2><a class="nav-link" href="/">Front Page</a></section><section class="nav-group"><h2>Indexes</h2><a class="nav-link" href="/indexes/repositories.html">Repositories</a><a class="nav-link" href="/indexes/ingestion-queue.html">Ingestion Queue</a></section><section class="nav-group"><h2>Semester Archives</h2><a class="nav-link" href="/projects/sem-4-iitb-ee.html">SEM-4-IITB-EE</a><a class="nav-link" href="/projects/sem-5-iitb-ee.html">SEM-5-IITB-EE</a><a class="nav-link" href="/projects/sem-6-iitb-ee.html">SEM-6-IITB-EE</a><a class="nav-link" href="/projects/sem-7-iitb-ee.html">SEM-7-IITB-EE</a><a class="nav-link" href="/projects/sem-8-iitb-ee.html">SEM-8-IITB-EE</a></section><section class="nav-group"><h2>Standalone Projects</h2><a class="nav-link" href="/projects/soc-2020.html">SOC-2020</a><a class="nav-link" href="/projects/umic-team4-final.html">UMIC_TEAM4-Final</a></section><section class="nav-group"><h2>Coursework &amp; Practice</h2><a class="nav-link" href="/projects/ma-tuts.html">MA-tuts</a><a class="nav-link" href="/projects/mooc-content.html">MOOC-content</a><a class="nav-link" href="/projects/reports-soc2020.html">reports_SOC2020</a></section><section class="nav-group"><h2>Forked Contributions</h2><a class="nav-link" href="/projects/16-bit-alu.html">16-bit-ALU</a><a class="nav-link" href="/projects/autumn-of-automation.html">Autumn-of-Automation</a></section>
+  </aside>
+  <div class="page-column">
+    <header class="topbar">
+      <nav class="breadcrumbs"><a href="/">Home</a><span class="crumb-sep">/</span><span>Source Captures</span><span class="crumb-sep">/</span><span>16-bit-ALU Capture</span></nav>
+      <div class="search-shell">
+        <input class="search-input" type="search" placeholder="Search articles" data-search-input aria-label="Search articles">
+        <div class="search-results" data-search-results hidden></div>
+      </div>
+    </header>
+    <main class="article">
+      
+        <header class="article-header">
+          <div class="article-kicker-row">
+            <span class="article-badge">Source Capture</span>
+            <a class="source-link" href="/raw/github/16-bit-alu/2026-04-21-capture.md">View Markdown Source</a>
+          </div>
+          <h1>16-bit-ALU Capture</h1>
+          <p class="article-summary">Captured on April 21, 2026 from iamprasann/16-bit-ALU.</p>
+        </header>
+        <h2 id="repository-metadata">Repository Metadata</h2>
+<ul><li>Name: <code>16-bit-ALU</code></li><li>Description: empty</li><li>Created: <code>2020-12-05T16:50:02Z</code></li><li>Updated: <code>2020-12-05T17:00:07Z</code></li><li>Default branch: <code>main</code></li><li>Primary language: <code>VHDL</code></li><li>Fork: <code>true</code></li><li>Parent repository: <code>vineetgala/16-bit-ALU</code></li></ul>
+<h2 id="top-level-structure">Top-Level Structure</h2>
+<ul><li><code>ALU.vhd</code></li><li><code>AND_gate_3to1.vhd</code></li><li><code>FinalGraph.png</code></li><li><code>MUX_4to1.vhd</code></li><li><code>OR_gate_4to1.vhd</code></li><li><code>Project-PartA.pdf</code></li><li><code>README.md</code></li><li><code>Testbench.vhd</code></li><li><code>full_adder.vhd</code></li><li><code>full_nand.vhd</code></li><li><code>full_subtract.vhd</code></li><li><code>full_xor.vhd</code></li><li><code>full_zero.vhd</code></li><li><code>image.png</code></li><li><code>my_and.vhd</code></li><li><code>my_carry.vhd</code></li><li><code>my_gen.vhd</code></li><li><code>my_nand.vhd</code></li><li><code>my_not.vhd</code></li><li><code>my_or.vhd</code></li><li><code>my_xor.vhd</code></li></ul>
+<h2 id="root-readme-notes">Root README Notes</h2>
+<ul><li>Title: <code>16-bit-ALU</code></li><li>Body: <code>16 bit ALU for EE224 course project in 2020.</code></li></ul>
+<p>The README is minimal, so the main meaning comes from the VHDL structure itself.</p>
+<h2 id="design-notes">Design Notes</h2>
+<h3 id="top-level-aluvhd">Top-level <code>ALU.vhd</code></h3>
+<ul><li>The top-level entity exposes two select lines, 16-bit inputs <code>A</code> and <code>B</code> as individual bit ports, 16-bit outputs <code>R</code>, plus carry <code>C</code> and zero flag <code>Z</code>.</li><li><code>full_xor</code></li><li><code>full_nand</code></li><li><code>full_adder</code></li><li><code>full_subtract</code></li><li><code>full_zero</code></li><li><code>MUX_4to1</code></li></ul>
+<p>The design computes XOR, NAND, addition, and subtraction in parallel, then uses sixteen <code>MUX_4to1</code> instances to select the output result bit-by-bit based on <code>S1</code> and <code>S0</code>. A final mux selects the appropriate carry output, and <code>full_zero</code> derives the zero flag from the result lines.</p>
+<p>This makes the project a structurally composed 16-bit ALU rather than a monolithic behavioral description.</p>
+<h3 id="supporting-modules">Supporting modules</h3>
+<ul><li>The repo contains lower-level helper modules such as <code>my_and.vhd</code>, <code>my_or.vhd</code>, <code>my_not.vhd</code>, <code>my_xor.vhd</code>, <code>my_nand.vhd</code>, <code>my_carry.vhd</code>, and <code>my_gen.vhd</code>.</li><li>It also contains higher-level arithmetic/logic blocks such as <code>full_adder.vhd</code>, <code>full_subtract.vhd</code>, <code>full_xor.vhd</code>, <code>full_nand.vhd</code>, and <code>full_zero.vhd</code>.</li></ul>
+<p>This suggests a bottom-up design style built from primitive gates and reusable composed blocks.</p>
+<h3 id="testbench">Testbench</h3>
+<ul><li><code>Testbench.vhd</code> instantiates the ALU and applies many explicit bit-pattern cases across the four select-line modes.</li><li>The comments describe it as a testbench with possible corner cases.</li></ul>
+<p>This indicates that verification was part of the project, not just design entry.</p>
+<h2 id="important-artifact-patterns">Important Artifact Patterns</h2>
+<ul><li>Hardware-design repository focused on VHDL modules rather than software code.</li><li>Flat top-level structure with all design units visible at the root.</li><li>Includes both implementation files and project/report imagery such as <code>Project-PartA.pdf</code>, <code>image.png</code>, and <code>FinalGraph.png</code>.</li></ul>
+<h2 id="source-links">Source Links</h2>
+<ul><li><a href="https://github.com/iamprasann/16-bit-ALU" target="_blank" rel="noreferrer">Repository root</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/README.md" target="_blank" rel="noreferrer">Root README</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/ALU.vhd" target="_blank" rel="noreferrer">ALU.vhd</a></li><li><a href="https://github.com/iamprasann/16-bit-ALU/blob/main/Testbench.vhd" target="_blank" rel="noreferrer">Testbench.vhd</a></li></ul>
+        
+    </main>
+  </div>
+  <aside class="toc-shell">
+    <div class="toc-card"><h2>On This Page</h2><a class="toc-item" href="#repository-metadata">Repository Metadata</a><a class="toc-item" href="#top-level-structure">Top-Level Structure</a><a class="toc-item" href="#root-readme-notes">Root README Notes</a><a class="toc-item" href="#design-notes">Design Notes</a><a class="toc-item toc-item-sub" href="#top-level-aluvhd">Top-level ALU.vhd</a><a class="toc-item toc-item-sub" href="#supporting-modules">Supporting modules</a><a class="toc-item toc-item-sub" href="#testbench">Testbench</a><a class="toc-item" href="#important-artifact-patterns">Important Artifact Patterns</a><a class="toc-item" href="#source-links">Source Links</a></div>
+  </aside>
+</body>
+</html>

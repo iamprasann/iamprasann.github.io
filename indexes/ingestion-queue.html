@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ingestion Queue | Prasann Iyer Knowledge Base</title>
+  <meta name="description" content="This queue defines the recommended order for deeper ingestion. Each pass should read the repository itself, capture the important files into raw/ as needed, and then create or expand the corresponding wiki pages.">
+  <link rel="stylesheet" href="/assets/wiki.css">
+  <script>
+    window.WIKI_CURRENT_URL = "/indexes/ingestion-queue.html";
+  </script>
+  <script defer src="/assets/wiki.js"></script>
+</head>
+<body data-page-kind="index">
+  <button class="mobile-nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="wiki-sidebar">Browse</button>
+  <aside class="sidebar" id="wiki-sidebar">
+    <a class="brand" href="/">
+      <span class="brand-mark">PI</span>
+      <span class="brand-copy">
+        <strong>Prasann Iyer</strong>
+        <span>Knowledge Base</span>
+      </span>
+    </a>
+    <section class="nav-group"><h2>Home</h2><a class="nav-link" href="/">Front Page</a></section><section class="nav-group"><h2>Indexes</h2><a class="nav-link" href="/indexes/repositories.html">Repositories</a><a class="nav-link active" href="/indexes/ingestion-queue.html">Ingestion Queue</a></section><section class="nav-group"><h2>Semester Archives</h2><a class="nav-link" href="/projects/sem-4-iitb-ee.html">SEM-4-IITB-EE</a><a class="nav-link" href="/projects/sem-5-iitb-ee.html">SEM-5-IITB-EE</a><a class="nav-link" href="/projects/sem-6-iitb-ee.html">SEM-6-IITB-EE</a><a class="nav-link" href="/projects/sem-7-iitb-ee.html">SEM-7-IITB-EE</a><a class="nav-link" href="/projects/sem-8-iitb-ee.html">SEM-8-IITB-EE</a></section><section class="nav-group"><h2>Standalone Projects</h2><a class="nav-link" href="/projects/soc-2020.html">SOC-2020</a><a class="nav-link" href="/projects/umic-team4-final.html">UMIC_TEAM4-Final</a></section><section class="nav-group"><h2>Coursework &amp; Practice</h2><a class="nav-link" href="/projects/ma-tuts.html">MA-tuts</a><a class="nav-link" href="/projects/mooc-content.html">MOOC-content</a><a class="nav-link" href="/projects/reports-soc2020.html">reports_SOC2020</a></section><section class="nav-group"><h2>Forked Contributions</h2><a class="nav-link" href="/projects/16-bit-alu.html">16-bit-ALU</a><a class="nav-link" href="/projects/autumn-of-automation.html">Autumn-of-Automation</a></section>
+  </aside>
+  <div class="page-column">
+    <header class="topbar">
+      <nav class="breadcrumbs"><a href="/">Home</a><span class="crumb-sep">/</span><span>Indexes</span><span class="crumb-sep">/</span><span>Ingestion Queue</span></nav>
+      <div class="search-shell">
+        <input class="search-input" type="search" placeholder="Search articles" data-search-input aria-label="Search articles">
+        <div class="search-results" data-search-results hidden></div>
+      </div>
+    </header>
+    <main class="article">
+      
+        <header class="article-header">
+          <div class="article-kicker-row">
+            <span class="article-badge">Index</span>
+            <a class="source-link" href="/wiki/indexes/ingestion-queue.md">View Markdown Source</a>
+          </div>
+          <h1>Ingestion Queue</h1>
+          <p class="article-summary">This queue defines the recommended order for deeper ingestion. Each pass should read the repository itself, capture the important files into raw/ as needed, and then create or expand the corresponding wiki pages.</p>
+        </header>
+        <h2 id="recommended-order">Recommended Order</h2>
+<ol><li><code>SEM-4-IITB-EE</code> -&gt; <a href="/projects/sem-4-iitb-ee.html">seed page created</a></li><li><code>SEM-5-IITB-EE</code> -&gt; <a href="/projects/sem-5-iitb-ee.html">seed page created</a></li><li><code>SEM-6-IITB-EE</code> -&gt; <a href="/projects/sem-6-iitb-ee.html">seed page created</a></li><li><code>SEM-7-IITB-EE</code> -&gt; <a href="/projects/sem-7-iitb-ee.html">seed page created</a></li><li><code>SEM-8-IITB-EE</code> -&gt; <a href="/projects/sem-8-iitb-ee.html">seed page created</a></li><li><code>SOC-2020</code> -&gt; <a href="/projects/soc-2020.html">seed page created</a></li><li><code>UMIC_TEAM4-Final</code> -&gt; <a href="/projects/umic-team4-final.html">seed page created</a></li><li><code>InstiShop</code> -&gt; target page <code>wiki/projects/instishop.md</code></li><li><code>MA-tuts</code> -&gt; <a href="/projects/ma-tuts.html">seed page created</a></li><li><code>MOOC-content</code> -&gt; <a href="/projects/mooc-content.html">seed page created</a></li><li><code>reports_SOC2020</code> -&gt; <a href="/projects/reports-soc2020.html">seed page created</a></li><li><code>16-bit-ALU</code> -&gt; <a href="/projects/16-bit-alu.html">seed page created</a></li><li><code>Autumn-of-Automation</code> -&gt; <a href="/projects/autumn-of-automation.html">seed page created</a></li><li><code>iamprasann.github.io</code> -&gt; intentionally skipped because this repository is the host knowledge base</li></ol>
+<h2 id="why-this-order">Why This Order</h2>
+<ul><li>Start with the semester repositories because they are likely to expose the broadest undergraduate structure.</li><li>Move next to bounded projects that can become stronger narrative pages.</li><li>Leave forks and support repositories later, once the main academic story is already mapped.</li><li>Do not ingest the site repository itself; it is the host knowledge base for the derived wiki.</li></ul>
+<h2 id="per-repository-pass-checklist">Per-Repository Pass Checklist</h2>
+<ul><li>Read <code>README</code> and top-level structure.</li><li>Identify courses, projects, reports, notebooks, presentations, and datasets.</li><li>Capture important references, screenshots, and source links into <code>raw/</code> only when needed.</li><li>Write or expand the project page in <code>wiki/projects/</code>.</li><li>Update <code>wiki/indexes/repositories.md</code> with the local page link once it exists.</li><li>Create follow-on concept, course, or timeline pages when the repo supports broader synthesis.</li></ul>
+<h2 id="related">Related</h2>
+<ul><li><a href="/indexes/repositories.html">Repositories</a></li></ul>
+<h2 id="sources">Sources</h2>
+<ul><li><a href="/raw/github/2026-04-21-iamprasann-repositories.json">raw/github/2026-04-21-iamprasann-repositories.json</a></li></ul>
+        
+    </main>
+  </div>
+  <aside class="toc-shell">
+    <div class="toc-card"><h2>On This Page</h2><a class="toc-item" href="#recommended-order">Recommended Order</a><a class="toc-item" href="#why-this-order">Why This Order</a><a class="toc-item" href="#per-repository-pass-checklist">Per-Repository Pass Checklist</a><a class="toc-item" href="#related">Related</a><a class="toc-item" href="#sources">Sources</a></div>
+  </aside>
+</body>
+</html>
